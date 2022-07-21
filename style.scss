@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow:wght@600&family=Commissioner:wght@400;500;700&family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Josefin+Sans:wght@300&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@600;800&family=Montserrat:wght@500;700&family=Overpass:wght@300;600&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Barlow:wght@600&family=Commissioner:wght@400;500;700&family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Josefin+Sans:wght@300&family=Karla:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@600;800&family=Montserrat:wght@500;700&family=Overpass:wght@300;600&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap');
+
+//### Primary
+$DarkViolet: hsl(256, 26%, 20%);
+$GrayishBlue: hsl(216, 30%, 68%);
+
+//### Neutral
+$VeryDarkViolet: hsl(270, 9%, 17%);
+$DarkGrayishViolet: hsl(273, 4%, 51%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+// font-family: 'DM Serif Display', serif;
+// font-family: 'Karla', sans-serif;
+
+@media screen and (max-width: 375px) {
+
+    
+    
+    .header {
+        padding: 30px 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .bar {
+        position: absolute;
+        cursor: pointer;
+        right: 25px;
+    }
+
+    .close {
+        visibility: hidden;
+        position: absolute;
+        cursor: pointer;
+        right: 25px;
+    }
+
+    .navigation {
+        visibility: hidden;
+        background-image: url(/images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-position: 0 400px;
+        background-color: $VeryDarkViolet;
+        font-family: 'Karla', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        position: absolute;
+        width: 375px;
+        height: 620px;
+        top: 78px;
+        left: 0;
+
+        p {
+            line-height: 65px;
+            cursor: pointer;
+        }
+
+        .nav-para-top {
+            margin-top: 40px;
+        }
+
+        .nav-para-bottom {
+            margin-bottom: 30px;
+        }
+
+        button {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 17px 100px;
+            border: 2px solid white;
+            text-transform: uppercase;
+            background-color: $VeryDarkViolet;
+        }
+        button:hover {
+            background-color: #fff;
+            color: $VeryDarkViolet;
+            cursor: pointer;
+        }
+        
+    }
+
+    .insurance {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .insurance-text {
+        background-image: url(/images/bg-pattern-intro-left-mobile.svg) , url(/images/bg-pattern-intro-right-mobile.svg);
+        background-position: 0 0 , 250px 360px;
+        background-repeat: no-repeat;
+        background-color: $DarkViolet;
+        text-align: center;
+        margin-top: -5px;
+        padding: 90px 30px;
+        color: white;
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+            padding: 10px 30px;
+            border: 2px solid white;
+            background-color: $DarkViolet;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background-color: white;
+            cursor: pointer;
+            color: $DarkViolet;
+        }
+    }
+
+    .main-line {
+        width: 150px;
+        height: 1px;
+        margin:0 0 55px 80px;
+        background-color: $DarkViolet;
+    }
+
+    .main {
+        background-image: url(/images/bg-pattern-intro-right-mobile.svg);
+        background-position: 250px -158px;
+        background-repeat: no-repeat;
+        text-align: center;
+        padding: 135px 30px;
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 60px;
+            color: $VeryDarkViolet;
+        }
+    }
+
+    .snappy , .affordable , .people-first{
+        margin-bottom: 60px;
+
+        img {
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: 27px;
+            margin-bottom: 18px;
+            color: $VeryDarkViolet;
+        }
+        p {
+            padding: 0 15.3px;
+            line-height: 25px;
+            color: $DarkGrayishViolet;
+        }
+    }
+    .people-first {
+        margin-bottom: 10px;
+    }
+
+    .how-we-work {
+        background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 150px 0;
+        background-color: $DarkViolet;
+        text-align: center;
+        padding: 70px 0;
+        color: white;
+        margin: 0 25px 150px 25px;
+
+        h1 {
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+        button {
+            background-color: $DarkViolet;
+            text-transform: uppercase;
+            border: 1px solid white;
+            cursor: pointer;
+            padding: 13px 30px;
+            font-weight: 700;
+            color: white;
+        }
+        button:hover {
+            background-color: white;
+            cursor: pointer;
+            color: $DarkViolet;
+        }
+    }
+
+    .social-media {
+        background-image: url(/images/bg-pattern-footer-mobile.svg);
+        background-repeat: no-repeat;
+        background-color: $VeryLightGray;
+        text-align: center;
+        padding: 90px 0 40px 0;
+
+        .bottom-logo {
+            margin-bottom: 30px;
+        }
+        .icons img {
+            margin-left: 13px;
+            cursor: pointer;
+        }
+        .icons:hover img {
+            color: $DarkViolet;
+        }
+
+        .icon-fb:hover{
+            filter: brightness(0) invert(0);
+        }
+        .icon-twitter:hover{
+            filter: brightness(0) invert(0);
+        }
+        .icon-pinterest:hover{
+            filter: brightness(0) invert(0);
+        }
+        .icon-insta:hover{
+            filter: brightness(0) invert(0);
+        }
+    }
+
+    .footer-line {
+        background-color: rgb(228, 228, 228);
+        margin-left: 25px;
+        width: 325px ;
+        height: 1px;
+    }
+
+    .footer {
+        font-family: 'Karla', sans-serif;
+        text-align: center;
+        padding: 50px 0 80px 0;
+        text-transform: uppercase;
+
+        h4 {
+            color: $DarkGrayishViolet;
+            margin-bottom: 30px;
+        }
+
+        a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 30px;
+            color: $VeryDarkViolet;
+            text-decoration: none;
+        }
+        a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    .company , .help , .contact {
+        margin-bottom: 30px;
+    }
+
+    .fam-desktop , .background-image{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1440px){
+    
+    .fam-mobile { display: none; }
+    .bar { display: none; }
+    .close{ display: none; }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 170px 35px 130px;
+    }
+
+    .navigation {
+        color: $DarkGrayishViolet;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        p {
+            margin-right: 30px;
+            font-weight: 600;
+        }
+
+        p:hover {
+            cursor: pointer;
+            color: $VeryDarkViolet;
+        }
+
+        button {
+            text-transform: uppercase;
+            background-color: #fff;
+            padding: 15px 35px;
+            color: $DarkViolet;
+            font-weight: 600;
+        }
+        button:hover {
+            background-color: $DarkViolet;
+            cursor: pointer;
+            color: #fff;
+        }
+
+    }
+
+    .background-image {
+        position: absolute;
+        width: 436px;
+        height: 530px;
+        right: 0;
+        top: 120px;
+    }
+
+    .insurance {
+        background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+        background-position: 0 500px ;
+        background-repeat: no-repeat;
+        background-color: $DarkViolet;
+        height: 670px;
+        color: #fff;
+        padding: 150px 140px 0 140px;
+        display: flex;
+
+        img {
+            z-index: -1;
+        }
+
+        .insurance-text {
+            padding-right: 30px;
+        }
+
+        .insurance-line {
+            width: 200px ;
+            height: 2px;
+            margin-bottom: 70px;
+            background-color: #fff;
+        }
+
+        h1 {
+            font-size: 80px;
+            line-height: 70px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            color: rgb(223, 220, 220);
+            margin-bottom: 30px;
+            line-height: 30px;
+        }
+
+        button {
+            font-weight: 600;
+            color: #fff;
+            padding: 15px 40px;
+            border: 1px solid #fff;
+            background-color: $DarkViolet;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background-color: #fff;
+            color: $DarkViolet;
+            cursor: pointer;
+        }
+    }
+
+    .main {
+        background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 0 -170px;
+        padding: 300px 150px 200px 150px;
+
+        .main-line {
+            background-color: rgb(186, 186, 186);
+            margin-bottom: 60px;
+            width: 150px;
+            height: 1px;
+        }
+
+        h1 {
+            font-size: 65px;
+            color: $DarkViolet;
+            margin-bottom: 80px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+
+            .snappy {
+                
+                p {
+                    padding-right: 20px;
+                }
+            }
+
+            .affordable {
+                margin-right: -60px;
+                p {
+                    padding-right: 90px;
+                }
+            }
+
+            .people-first {
+                p {
+                    padding-right: 65px;
+                }
+            }
+
+            img {
+                margin-bottom: 30px;
+            }
+            h3 {
+                font-size: 30px;
+                color: $DarkViolet;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                color: $DarkGrayishViolet;
+            }
+        }
+
+    }
+
+    .how-we-work {
+        background-image: url(/images/bg-pattern-how-we-work-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 705px 0;
+        background-color: $DarkViolet;
+        justify-content: space-between;
+        margin: 0 150px 150px 150px;
+        padding: 60px 80px;
+        align-items: center;
+        display: flex;
+
+        h1 {
+            padding-right: 180px;
+            font-size: 60px;
+            color: #fff;
+            width: 70%;
+        }
+
+        button {
+            text-transform: uppercase;
+            background-color: $DarkViolet;
+            border: 2px solid #fff;
+            padding: 15px 20px;
+            font-weight: 700;
+            color: #fff;
+        }
+        button:hover {
+            background-color: #fff;
+            color: $DarkViolet;
+            cursor: pointer;
+        }
+    }
+
+    .social-media {
+        background-image: url(/images/bg-pattern-footer-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: $VeryLightGray;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        padding: 70px 150px 35px 150px;
+
+        .icons img {
+            margin-left: 20px;
+        }
+        .icons:hover img {
+            cursor: pointer;
+        }
+
+        .icon-fb:hover{
+            filter: brightness(0) invert(0);
+        }
+        .icon-twitter:hover{
+            filter: brightness(0) invert(0);
+        }
+        .icon-pinterest:hover{
+            filter: brightness(0) invert(0);
+        }
+        .icon-insta:hover{
+            filter: brightness(0) invert(0);
+        }
+    }
+
+    .footer-line {
+        width: 80%;
+        height: 2px;
+        margin-left: 10%;
+        background-color: rgb(228, 226, 226);
+
+    }
+
+    .footer {
+        background-image: url(/images/bg-pattern-footer-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 0 -135px;
+        font-family: 'Karla', sans-serif;
+        background-color: $VeryLightGray;
+        //justify-content: space-between;
+        align-items: center;
+        display: flex;
+        padding: 40px 150px 55px 150px;
+        text-transform: uppercase;
+
+        h4 {
+            color: $DarkGrayishViolet;
+            margin-bottom: 30px;
+        }
+
+        a {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 35px;
+            color: $VeryDarkViolet;
+            text-decoration: none;
+        }
+        a:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .company {
+            flex-grow: 1;
+        }
+
+        .help {
+            flex-grow: 1;
+        }
+
+        .contact {
+            flex-grow: 1;
+        }
+
+        .others {
+            flex-grow: 1;
+        }
+    }
+
+}
